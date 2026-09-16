@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Statement · Instructor Toolkit for Canvas</title>
+    <meta name="description" content="How Instructor Toolkit for Canvas, a Chrome extension for Canvas instructors, handles course and student information." />
+    <style>
+      :root { color-scheme: light; }
+      body { margin: 0; background: #f5f5f5; color: #2d3b45; font: 16px/1.6 Lato, Calibri, system-ui, sans-serif; }
+      main { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; background: #fff; }
+      h1 { color: #006747; font-size: 2rem; margin: 0 0 0.25rem; }
+      h2 { color: #006747; font-size: 1.15rem; margin: 2rem 0 0.5rem; }
+      p { margin: 0 0 1rem; }
+      .itk-small { font-size: 0.9rem; }
+      .itk-muted { color: #586874; }
+      footer { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem 3rem; color: #586874; font-size: 0.85rem; }
+      a { color: #006747; }
+    </style>
+  </head>
+  <body>
+    <main class="itk-welcome itk-root">
+      <h1>Privacy statement</h1>
+      <p class="itk-small itk-muted">Instructor Toolkit for Canvas, version 0.23.0 (instructor beta)</p>
+
+      <h2>Where the Toolkit runs</h2>
+      <p>The Toolkit runs inside your own Canvas session in your browser. Every request about your courses goes to the Canvas site you are signed into (for the USF pilot, usflearn.instructure.com) and uses your existing Canvas login. The one other address it reads is the public USF academic calendar, described below. It does not ask for or store a Canvas access token.</p>
+
+      <h2>What is not done with your information</h2>
+      <p>Student information is not sold. No advertising is used. No third party analytics or tracking is used. The Toolkit does not send student work, comments, grades, or names to external AI systems or to any service outside your Canvas instance. Canvas information is not stored on an external Toolkit server, because there is no Toolkit server.</p>
+
+      <h2>What is stored in your browser</h2>
+      <p>Your preferences (which tools are on, default times, keyboard shortcuts, accent styling, the courses you chose to count), your Dashboard course groups (group names, course ids, which groups are collapsed, and any card labels you typed), your quick comment snippets, your announcement and message templates, your notes, self-reminders, and saved links, the Operations Check rules or issues you chose to ignore, the setup checklist items you marked complete (item id and date), and your personal activity targets are stored by Chrome in this browser's extension storage. Quick comment placeholders such as a student's name are filled in only at the moment you insert a comment and are never stored. Ignore entries contain course, rule, and item identifiers only.</p>
+      <p>Two small stores hold student ids without names, in this browser only. The Missing Work follow-up memory keeps a course id, a student id, the date, and how you made contact (a Toolkit message or Mark contacted) for sixty days, never the message or the name; you can clear any record. The figures collected for My Teaching Activity (counts and timings with Canvas ids, never text or names) are kept for a day for a finished period and two hours for the current one, so the view does not re-read Canvas each time.</p>
+      <p>A compact copy of each course's dataset (assignments, the roster with names and sections, and submission records reduced to ids, dates, states, and scores, with no comment text or submission content) is kept in session storage for ten minutes so the Toolkit views open at once after you move between pages, and is cleared when Chrome closes.</p>
+      <p>A grading queue you start from the Grading view (course, assignment, and student ids with short labels) is kept in session storage for the current browser session so SpeedGrader can follow it, and is cleared when Chrome closes or when the queue completes.</p>
+      <p>If you mark a submission comment as reviewed in the comment inbox, that mark is kept in session storage for the current browser session and cleared when Chrome closes. It contains identifiers only, never comment text.</p>
+      <p>Everything else the Toolkit displays from Canvas (comments, submission content, health reports) is held in the page's memory while the tab is open and is not written to storage.</p>
+
+      <h2>What the Toolkit can change in Canvas</h2>
+      <p>The Toolkit changes Canvas data only when you take an explicit action: saving a date, confirming a reviewed list of date changes, applying a labeled fix on the Operations Check, creating a rubric from a CSV you chose, posting a reply you typed, saving a grade you entered on a discussion post, writing the grades listed on a Bulk grade preview you confirmed (or undoing that run), leaving the comments listed on a Bulk comment preview you confirmed, recording the score you chose on missing work you confirmed, marking an announcement as read for yourself, applying quiz accommodations or due-date extensions you previewed and confirmed, creating an unpublished copy of an announcement you chose, editing an announcement in place, deleting or re-authoring an announcement you chose and confirmed by name, or sending Inbox messages you reviewed and confirmed one by one. It never changes grades, enrollments, or content on its own. For the Days logged into Canvas figure it also keeps, in this browser, a list of the dates on which it saw you in Canvas: dates only, nothing about what you opened. Slim view on the Modules page is likewise a display choice kept in this browser; it changes nothing in Canvas and nothing students see. The only thing it deletes is an announcement you confirmed by name, and Canvas keeps deleted announcements on the course's Undelete page.</p>
+
+      <h2>The USF academic calendar</h2>
+      <p>For closed-day notices and grade deadline reminders, the Toolkit reads the public "Important Dates and Deadlines" page published by the USF Office of the Registrar (usf.edu/registrar/calendars) about once a week. That request carries no cookies, no Canvas information, and nothing about you or your students; it is the same page anyone can open in a browser. The parsed dates are kept in this browser's extension storage. Turn off the reminder switches in Settings and the page is never requested.</p>
+
+      <h2>Diagnostics</h2>
+      <p>When Developer diagnostics is turned on in Settings, the Toolkit prints timing and flow information to the browser console. Student names, IDs, submission content, comments, and grades are removed before anything is printed. Nothing is transmitted.</p>
+
+      <h2>Removing the Toolkit</h2>
+      <p>Removing the extension from Chrome deletes everything it stored: preferences, templates, notes, the follow-up memory, and the activity cache. Nothing else needs to be cleaned up because nothing is stored anywhere else.</p>
+
+      </main>
+    <footer>
+      <p>Instructor Toolkit for Canvas, version 0.23.0. Questions about this statement go to the address on the extension's Chrome Web Store listing.</p>
+      <p>This page is the privacy policy referenced by that listing. The same text ships inside the extension, reachable from Settings.</p>
+    </footer>
+  </body>
+</html>
